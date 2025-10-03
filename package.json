@@ -4,10 +4,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "prebuild": "chmod +x node_modules/.bin/vite",
+  "build": "vite build",
+  "dev": "vite",
+  "preview": "vite preview"
+}
+,
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
     "chart.js": "^4.5.0",
